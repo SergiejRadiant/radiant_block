@@ -1,13 +1,13 @@
-@font-face {
-    font-family: 'Panton Light Caps'; /* Гарнитура шрифта */
-    src: url(../fonts/Pantonlightcaps.eot); /* Для IE5-8 */
-    src: local('Panton Light Caps'), url(../fonts/Pantonlightcaps.ttf); /* Для остальных браузеров */
+body {
+	margin: 0;
 }
 
 .wrapper {
 	height: 100vh;
 	width: 100wh;
 	position: relative;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
 }
 
 header {
@@ -31,13 +31,56 @@ main{
 }
 
 .cell {
-		display: table-cell;
-		/* А ты вообще забыл прописать свойство, которое будет выравнивать
-			контент по середине экрана в вертикальной плоскости */
-		vertical-align: middle;/* Я тебе про него по телефону говорил*/
-
-		/* ну и пропишу выравнивание контента (текста и объектов display: inline-block)
-		по центру*/
-		text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 
+.cell h1 {
+	font-family: 'gothic', sans-serif;
+	font-size: 54px;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 35px;
+}
+
+.cell p {
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 45px;
+}
+
+.cell a {
+	display: inline-block;
+	border: 2px solid rgba(0,0,0,.4);
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 15px;
+	color: rgba(0,0,0,.4);
+	padding: 7px 54px;
+	text-decoration: none;
+}
+
+.cell a:hover {
+	border: 2px solid rgba(0,0,0,1);
+	color: rgba(0,0,0,1);
+}		
+
+.cell a:active {
+	border: 2px solid rgba(0,0,0,1);
+	color: rgba(0,0,0,1);
+}
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+	
+footer p {
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 13px;
+	margin-top: 0px;
+	margin-bottom: 34px;
+}	
