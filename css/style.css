@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Panton Light Caps'; /* Гарнитура шрифта */
+    src: url(../fonts/Pantonlightcaps.eot); /* Для IE5-8 */
+    src: local('Panton Light Caps'), url(../fonts/Pantonlightcaps.ttf); /* Для остальных браузеров */
+}
+
+.wrapper {
+	height: 100vh;
+	width: 100vh;
+	position: relative;
+}
+
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.logo {
+	width: 213.99px;
+	height: 79.01px;	
+	margin: 34px auto 0 auto;
+	background-image: url(../img/logo.png);
+
+}
+
