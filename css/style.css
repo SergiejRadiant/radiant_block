@@ -84,3 +84,14 @@ footer p {
 	margin-top: 0px;
 	margin-bottom: 34px;
 }	
+
+@media screen and (max-device-width: 970px) {
+    
+	div.logo {
+	width: 179px;
+	height: 66px;	
+	margin: 24px auto 0 auto;
+	background-size: cover;
+	}
+
+}
