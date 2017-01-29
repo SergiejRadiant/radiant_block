@@ -14,15 +14,17 @@ header {
 	width: 100%;
 	position: absolute;
 	top: 0;
+	text-align: center;
 }
 
 .logo {
-	display: block;
+	display: inline-block;
 	width: 213.99px;
 	height: 79.01px;	
 	margin: 34px auto 0 auto;
 	background-size: cover;	
-	text-decoration: none;	
+	text-decoration: none;
+	cursor: pointer	
 }
 
 img {
