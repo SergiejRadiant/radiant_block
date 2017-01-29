@@ -15,6 +15,7 @@ header {
 	position: absolute;
 	top: 0;
 	text-align: center;
+	z-index: 5;
 }
 
 .logo {
@@ -24,7 +25,6 @@ header {
 	margin: 34px auto 0 auto;
 	background-size: cover;	
 	text-decoration: none;
-	cursor: pointer	
 }
 
 img {
@@ -36,6 +36,7 @@ main{
 	width: 100%;
 	height: 100%;
 	position: relative;
+	z-index: 3;
 }
 
 .cell {
@@ -67,6 +68,7 @@ main{
 	color: rgba(0,0,0,.4);
 	padding: 7px 54px;
 	text-decoration: none;
+	transition: border 1s ease, color 1s ease;
 }
 
 .cell a:hover {
@@ -91,125 +93,4 @@ footer p {
 	font-size: 13px;
 	margin-top: 0px;
 	margin-bottom: 34px;
-}	
-
-@media screen and (max-width: 970px) {
-    
-	.logo {
-	width: 179px;
-	height: 66px;	
-	margin: 24px auto 0 auto;
-	background-size: cover;
-	}
-
-	.cell h1 {
-	font-size: 44px;
-	margin-bottom: 25px;
-	}
-	
-	.cell p {
-	font-size: 16px;
-	margin-bottom: 35px;
-	}
-	
-	.cell a {
-	font-size: 14px;
-	padding: 7px 54px;
-	}
-	
-	footer p {
-	margin-bottom: 24px;
-	}	
-	
-}
-
-@media screen and (max-width: 750px) {
-    
-	.logo {
-	width: 140.02px;
-	height: 51px;
-	}
-
-	.cell h1 {
-	font-size: 28px;
-	margin-bottom: 25px;
-	}
-	
-	.cell p {
-	font-size: 14px;
-	margin-bottom: 30px;
-	}
-	
-	.cell a {
-	font-size: 13px;
-	padding: 7px 44px;
-	}
-
-}
-
-@media screen and (max-width: 480px) {
-    
-	.cell {
-	padding:0  40px;
-	}
-	
-	.cell h1 {
-	text-align: left;
-	font-size: 28px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	}
-	
-	.cell p {
-	text-align: left;
-	font-size: 14px;
-	margin-bottom: 15vh;
-	}
-	
-	.cell a {
-	font-size: 11px;
-	padding: 9px 24px;
-	}
-
-	footer p {
-	font-size: 10px;
-	margin-bottom: 14px;
-	}	
-	
-}
-
-@media screen and (max-width: 320px) {
-
-	.logo {
-	width: 107.99px;
-	height: 39.99px;
-	margin: 14px auto 0 auto;
-	}
-	
-	.cell {
-	padding:0  20px ;
-	}
-
-	.cell h1 {
-	text-align: left;
-	font-size: 18px;
-	margin-top: 20px;
-	margin-bottom: 15px;
-	}
-	
-	.cell p {
-	text-align: left;
-	font-size: 10px;
-	margin-bottom: 15vh;
-	}
-	
-	.cell a {
-	padding: 8px 10px;
-	font-size: 8px;
-	}
-	
-	footer p {
-	font-size: 8px;
-	margin-bottom: 10px;
-	}	
 }
